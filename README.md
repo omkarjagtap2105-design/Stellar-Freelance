@@ -6,6 +6,8 @@ A decentralized freelance payment platform built on the Stellar blockchain, feat
 ![Next.js](https://img.shields.io/badge/Next.js-14-black)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue)
 ![Rust](https://img.shields.io/badge/Rust-Soroban-orange)
+![CI](https://github.com/YOUR_USERNAME/YOUR_REPO/workflows/CI/badge.svg)
+![License](https://img.shields.io/badge/license-MIT-green)
 
 ## ✨ Features
 
@@ -165,6 +167,73 @@ npm run test:e2e
 cd contracts
 cargo test
 ```
+
+## 🚀 CI/CD Pipeline
+
+This project includes a comprehensive CI/CD pipeline with GitHub Actions:
+
+### Continuous Integration (CI)
+- **Automated Testing**: Unit tests, E2E tests, and contract tests
+- **Code Quality**: Linting, formatting, and type checking
+- **Security Scanning**: Dependency vulnerability checks
+- **Coverage Reports**: Automated code coverage tracking
+
+### Continuous Deployment (CD)
+- **Automatic Deployment**: Deploy to testnet on merge to main
+- **Manual Deployment**: Deploy to mainnet with approval
+- **Release Automation**: Automated releases with changelog generation
+
+### Additional Workflows
+- **Dependency Updates**: Weekly automated dependency updates
+- **Performance Testing**: Daily load testing and benchmarks
+- **Code Quality Checks**: Coverage, bundle size, and complexity analysis
+
+For detailed CI/CD documentation, see [.github/CICD.md](.github/CICD.md)
+
+### Required Secrets
+
+Configure these in GitHub Settings → Secrets:
+
+```bash
+STELLAR_SECRET_KEY          # Deployer account secret key
+SOROBAN_RPC_URL            # Soroban RPC endpoint
+NETWORK_PASSPHRASE         # Network passphrase
+HORIZON_URL                # Horizon API endpoint
+VERCEL_TOKEN              # (Optional) Vercel deployment token
+```
+
+## 📦 Deployment
+
+### Automated Deployment
+
+Push to `main` branch triggers automatic deployment to testnet:
+
+```bash
+git push origin main
+```
+
+### Manual Deployment
+
+Use the deployment script:
+
+```bash
+export STELLAR_SECRET_KEY="your-secret-key"
+export SOROBAN_RPC_URL="https://soroban-testnet.stellar.org"
+export NETWORK_PASSPHRASE="Test SDF Network ; September 2015"
+
+./scripts/deploy.sh
+```
+
+### Creating a Release
+
+Create and push a version tag:
+
+```bash
+git tag v1.0.0
+git push origin v1.0.0
+```
+
+This automatically creates a GitHub release with artifacts.
 
 ## 📱 Usage Guide
 
