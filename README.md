@@ -1,0 +1,280 @@
+# 🚀 Stellar Freelance Platform
+
+A decentralized freelance payment platform built on the Stellar blockchain, featuring instant payments, milestone-based escrow, and real-time activity tracking.
+
+![Stellar](https://img.shields.io/badge/Stellar-Blockchain-blue)
+![Next.js](https://img.shields.io/badge/Next.js-14-black)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue)
+![Rust](https://img.shields.io/badge/Rust-Soroban-orange)
+
+## ✨ Features
+
+### 💸 Payment System
+- **Instant Payments**: Send XLM and custom assets instantly on Stellar testnet
+- **Batch Payments**: Pay multiple recipients in a single transaction
+- **Payment Links**: Generate shareable payment request URLs
+- **Transaction History**: View, filter, and export payment history as CSV
+
+### 🔒 Escrow System
+- **Milestone-Based Escrow**: Create escrows with multiple milestones
+- **Client Controls**: Release funds per milestone or cancel entire escrow
+- **Freelancer View**: Track and claim released milestone payments
+- **Dispute Resolution**: Built-in dispute mechanism for conflict resolution
+
+### 📊 Additional Features
+- **Invoice Generator**: Create professional PDF invoices from transactions
+- **Real-Time Activity Feed**: Live contract event streaming via SSE
+- **Multi-Wallet Support**: Connect with Freighter or Albedo wallets
+- **Dark Mode**: Beautiful UI with light/dark theme support
+- **Responsive Design**: Works seamlessly on desktop and mobile
+
+## 🎨 UI/UX Highlights
+
+- Modern glassmorphism design with backdrop blur effects
+- Smooth animations and transitions throughout
+- Gradient backgrounds with animated blobs
+- Staggered card entrance animations
+- Interactive hover effects and micro-interactions
+- Accessible and WCAG-compliant components
+
+## 🛠️ Tech Stack
+
+### Frontend
+- **Framework**: Next.js 14 (App Router)
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS with custom animations
+- **Blockchain**: Stellar SDK (@stellar/stellar-sdk)
+- **Wallets**: Freighter API, Albedo SDK
+- **PDF Generation**: jsPDF
+- **Testing**: Jest, Playwright
+
+### Smart Contracts
+- **Language**: Rust
+- **Platform**: Soroban (Stellar smart contracts)
+- **Contracts**: Payment & Escrow contracts
+
+### Development Tools
+- **Package Manager**: npm
+- **Linting**: ESLint
+- **Type Checking**: TypeScript strict mode
+- **CI/CD**: GitHub Actions
+
+## 📦 Project Structure
+
+```
+stellar-freelance-platform/
+├── contracts/              # Soroban smart contracts
+│   ├── payment/           # Payment contract
+│   └── escrow/            # Escrow contract
+├── frontend/              # Next.js application
+│   ├── app/              # App router pages
+│   ├── components/       # React components
+│   ├── hooks/            # Custom React hooks
+│   ├── lib/              # Utilities and integrations
+│   └── __tests__/        # Unit and E2E tests
+├── scripts/              # Deployment scripts
+└── .github/              # CI/CD workflows
+```
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js 18+ and npm
+- Rust and Cargo (for contract development)
+- Stellar CLI (soroban-cli)
+- A Stellar wallet (Freighter or Albedo)
+
+### Installation
+
+1. **Clone the repository**
+```bash
+git clone <repository-url>
+cd stellar-freelance-platform
+```
+
+2. **Install frontend dependencies**
+```bash
+cd frontend
+npm install
+```
+
+3. **Set up environment variables**
+```bash
+cp .env.local.example .env.local
+```
+
+Edit `.env.local` with your configuration:
+```env
+NEXT_PUBLIC_NETWORK_PASSPHRASE=Test SDF Network ; September 2015
+NEXT_PUBLIC_HORIZON_URL=https://horizon-testnet.stellar.org
+NEXT_PUBLIC_SOROBAN_RPC_URL=https://soroban-testnet.stellar.org
+NEXT_PUBLIC_PAYMENT_CONTRACT_ID=your_payment_contract_id
+NEXT_PUBLIC_ESCROW_CONTRACT_ID=your_escrow_contract_id
+```
+
+4. **Run the development server**
+```bash
+npm run dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+### Building Smart Contracts
+
+1. **Navigate to contracts directory**
+```bash
+cd contracts
+```
+
+2. **Build contracts**
+```bash
+cargo build --target wasm32-unknown-unknown --release
+```
+
+3. **Deploy to Stellar testnet**
+```bash
+# Deploy payment contract
+soroban contract deploy \
+  --wasm target/wasm32-unknown-unknown/release/payment.wasm \
+  --source <your-secret-key> \
+  --network testnet
+
+# Deploy escrow contract
+soroban contract deploy \
+  --wasm target/wasm32-unknown-unknown/release/escrow.wasm \
+  --source <your-secret-key> \
+  --network testnet
+```
+
+## 🧪 Testing
+
+### Run Unit Tests
+```bash
+cd frontend
+npm test
+```
+
+### Run E2E Tests
+```bash
+npm run test:e2e
+```
+
+### Run Contract Tests
+```bash
+cd contracts
+cargo test
+```
+
+## 📱 Usage Guide
+
+### Connecting Your Wallet
+
+1. Visit the homepage
+2. Click "Connect with Freighter" or "Connect with Albedo"
+3. Approve the connection in your wallet extension
+4. You'll be redirected to the dashboard
+
+### Sending a Payment
+
+1. Navigate to Dashboard
+2. Fill in the "Send Payment" form:
+   - Recipient address
+   - Amount
+   - Asset (default: XLM)
+3. Click "Send Payment"
+4. Approve the transaction in your wallet
+
+### Creating an Escrow
+
+1. Navigate to Dashboard
+2. Fill in the "Create Escrow" form:
+   - Freelancer address
+   - Add milestones with descriptions and amounts
+3. Click "Create Escrow"
+4. Approve the transaction in your wallet
+
+### Releasing Milestone Payments
+
+1. Navigate to "Client" page
+2. Find your active escrow
+3. Click "Release" on completed milestones
+4. Approve the transaction in your wallet
+
+### Generating Invoices
+
+1. Complete a payment transaction
+2. Navigate to Dashboard
+3. Use the "Invoice Generator" section
+4. Click "Download Invoice" to get a PDF
+
+## 🔧 Configuration
+
+### Network Configuration
+
+The platform supports both Stellar testnet and mainnet. Update the environment variables to switch networks:
+
+**Testnet** (default):
+```env
+NEXT_PUBLIC_NETWORK_PASSPHRASE=Test SDF Network ; September 2015
+NEXT_PUBLIC_HORIZON_URL=https://horizon-testnet.stellar.org
+NEXT_PUBLIC_SOROBAN_RPC_URL=https://soroban-testnet.stellar.org
+```
+
+**Mainnet**:
+```env
+NEXT_PUBLIC_NETWORK_PASSPHRASE=Public Global Stellar Network ; September 2015
+NEXT_PUBLIC_HORIZON_URL=https://horizon.stellar.org
+NEXT_PUBLIC_SOROBAN_RPC_URL=https://soroban-rpc.stellar.org
+```
+
+### Wallet Configuration
+
+The platform supports multiple Stellar wallets:
+- **Freighter**: Browser extension wallet
+- **Albedo**: Web-based wallet
+
+## 🎯 Roadmap
+
+- [ ] Multi-signature escrow support
+- [ ] Recurring payment subscriptions
+- [ ] Fiat on/ramp integration
+- [ ] Mobile app (React Native)
+- [ ] Advanced analytics dashboard
+- [ ] Reputation system for freelancers
+- [ ] Dispute arbitration marketplace
+
+## 🤝 Contributing
+
+Contributions are welcome! Please follow these steps:
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## 📄 License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## 🙏 Acknowledgments
+
+- [Stellar Development Foundation](https://stellar.org) for the blockchain platform
+- [Soroban](https://soroban.stellar.org) for smart contract capabilities
+- [Freighter](https://www.freighter.app/) and [Albedo](https://albedo.link/) for wallet integrations
+- The Stellar community for continuous support
+
+## 📞 Support
+
+- **Documentation**: [Stellar Docs](https://developers.stellar.org)
+- **Discord**: [Stellar Developers](https://discord.gg/stellardev)
+- **Issues**: [GitHub Issues](https://github.com/your-repo/issues)
+
+## 🌟 Star History
+
+If you find this project useful, please consider giving it a star ⭐
+
+---
+
+Built with ❤️ on the Stellar blockchain
