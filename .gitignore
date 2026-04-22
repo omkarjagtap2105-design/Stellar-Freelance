@@ -1,0 +1,10 @@
+# Rust / build
+target/
+
+# Visual Studio
+.vs/
+bin/
+obj/
+
+# User files
+*.user
