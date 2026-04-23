@@ -2,12 +2,87 @@
 
 A decentralized freelance payment platform built on the Stellar blockchain, featuring instant payments, milestone-based escrow, and real-time activity tracking.
 
+## 🌐 Live Demo
+
+**🔗 [View Live Demo](http://stellarfreelance.vercel.app/)**
+
+Deployed on Vercel | [Give Feedback](https://docs.google.com/forms/d/1Yh3oM3i3a5mrUeMFo_Rwjh9GyNwqRr7B7FzORdAFob0/edit)
+
+## 🎥 Video Demo
+
+<video width="100%" controls>
+  <source src="Stellar Freelance Platform - Google Chrome 2026-04-22 23-52-49.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+## 🖼️ Screenshots
+
+![Dashboard Payment + Escrow](./dashboard-payment-escrow.png)
+
+![Batch Payment + Invoice Generator](./batch-payment-invoice.png)
+
+![Home Connect Wallet](./home-connect-wallet.png)
+
 ![Stellar](https://img.shields.io/badge/Stellar-Blockchain-blue)
 ![Next.js](https://img.shields.io/badge/Next.js-14-black)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue)
 ![Rust](https://img.shields.io/badge/Rust-Soroban-orange)
 ![CI](https://github.com/YOUR_USERNAME/YOUR_REPO/workflows/CI/badge.svg)
 ![License](https://img.shields.io/badge/license-MIT-green)
+
+## 🧪 Test Wallet Addresses
+
+Use these test wallet addresses to explore the platform on Stellar Testnet. All addresses are verifiable on [Stellar Expert](https://stellar.expert/explorer/testnet).
+
+| Purpose | Address | View on Explorer |
+|---------|---------|------------------|
+| Test User 1 | `GABC123EXAMPLE1STELLAR1ADDRESS1TESTNET1WALLET1ADDR1` | [View](https://stellar.expert/explorer/testnet/account/GABC123EXAMPLE1STELLAR1ADDRESS1TESTNET1WALLET1ADDR1) |
+| Test User 2 | `GDEF456EXAMPLE2STELLAR2ADDRESS2TESTNET2WALLET2ADDR2` | [View](https://stellar.expert/explorer/testnet/account/GDEF456EXAMPLE2STELLAR2ADDRESS2TESTNET2WALLET2ADDR2) |
+| Test User 3 | `GHIJ789EXAMPLE3STELLAR3ADDRESS3TESTNET3WALLET3ADDR3` | [View](https://stellar.expert/explorer/testnet/account/GHIJ789EXAMPLE3STELLAR3ADDRESS3TESTNET3WALLET3ADDR3) |
+| Test User 4 | `GKLM012EXAMPLE4STELLAR4ADDRESS4TESTNET4WALLET4ADDR4` | [View](https://stellar.expert/explorer/testnet/account/GKLM012EXAMPLE4STELLAR4ADDRESS4TESTNET4WALLET4ADDR4) |
+| Test User 5 | `GNOP345EXAMPLE5STELLAR5ADDRESS5TESTNET5WALLET5ADDR5` | [View](https://stellar.expert/explorer/testnet/account/GNOP345EXAMPLE5STELLAR5ADDRESS5TESTNET5WALLET5ADDR5) |
+| Test User 6 | `GQRS678EXAMPLE6STELLAR6ADDRESS6TESTNET6WALLET6ADDR6` | [View](https://stellar.expert/explorer/testnet/account/GQRS678EXAMPLE6STELLAR6ADDRESS6TESTNET6WALLET6ADDR6) |
+
+> **Note:** Replace these example addresses with your actual test wallet addresses. To create test wallets:
+> 1. Visit [Stellar Laboratory](https://laboratory.stellar.org/#account-creator?network=test)
+> 2. Generate a new keypair
+> 3. Fund the account with testnet XLM using the friendbot
+> 4. Update this table with your addresses
+
+### 🎮 Try the Live Demo
+
+1. **Visit the Demo**: Go to [stellarfreelance.vercel.app](http://stellarfreelance.vercel.app/)
+2. **Connect Wallet**: 
+   - Install [Freighter Wallet](https://www.freighter.app/) browser extension
+   - Or use [Albedo Wallet](https://albedo.link/) (web-based)
+3. **Get Test XLM**: 
+   - Switch to Stellar Testnet in your wallet
+   - Visit [Stellar Laboratory Friendbot](https://laboratory.stellar.org/#account-creator?network=test)
+   - Fund your account with test XLM
+4. **Explore Features**:
+   - Send instant payments
+   - Create milestone-based escrows
+   - Generate PDF invoices
+   - View transaction history
+   - Monitor real-time activity
+
+### 📊 Platform Statistics
+
+- **Network**: Stellar Testnet
+- **Smart Contracts**: 2 (Payment & Escrow)
+- **Total Transactions**: View on [Stellar Expert](https://stellar.expert/explorer/testnet)
+- **Active Users**: Growing community of testers and developers
+
+### 🔗 Deployed Smart Contracts
+
+The platform uses two Soroban smart contracts deployed on Stellar Testnet:
+
+| Contract | Purpose | View on Explorer |
+|----------|---------|------------------|
+| Payment Contract | Handles instant XLM and asset transfers | [View Contract](https://stellar.expert/explorer/testnet/contract/PAYMENT_CONTRACT_ID) |
+| Escrow Contract | Manages milestone-based escrow agreements | [View Contract](https://stellar.expert/explorer/testnet/contract/ESCROW_CONTRACT_ID) |
+
+> **Note**: Contract IDs will be updated after deployment. All contract interactions are transparent and verifiable on Stellar Explorer.
 
 ## ✨ Features
 
@@ -253,6 +328,7 @@ This automatically creates a GitHub release with artifacts.
    - Asset (default: XLM)
 3. Click "Send Payment"
 4. Approve the transaction in your wallet
+5. **Verify on Stellar Explorer**: Copy the transaction hash and view it on [Stellar Expert](https://stellar.expert/explorer/testnet)
 
 ### Creating an Escrow
 
@@ -262,6 +338,7 @@ This automatically creates a GitHub release with artifacts.
    - Add milestones with descriptions and amounts
 3. Click "Create Escrow"
 4. Approve the transaction in your wallet
+5. **Track on Explorer**: View your escrow contract interactions on [Stellar Expert](https://stellar.expert/explorer/testnet)
 
 ### Releasing Milestone Payments
 
@@ -269,6 +346,7 @@ This automatically creates a GitHub release with artifacts.
 2. Find your active escrow
 3. Click "Release" on completed milestones
 4. Approve the transaction in your wallet
+5. **Verify Payment**: Check the milestone release transaction on Stellar Explorer
 
 ### Generating Invoices
 
@@ -276,6 +354,14 @@ This automatically creates a GitHub release with artifacts.
 2. Navigate to Dashboard
 3. Use the "Invoice Generator" section
 4. Click "Download Invoice" to get a PDF
+
+### Viewing Transaction History
+
+1. Navigate to "History" page
+2. View all your transactions
+3. Filter by address, asset, or status
+4. Export to CSV for record-keeping
+5. **Verify Any Transaction**: Click on transaction IDs to view on Stellar Explorer
 
 ## 🔧 Configuration
 
@@ -340,9 +426,23 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 - **Discord**: [Stellar Developers](https://discord.gg/stellardev)
 - **Issues**: [GitHub Issues](https://github.com/your-repo/issues)
 
+## 💬 User Feedback
+
+We value your feedback! Help us improve the Stellar Freelance Platform:
+
+**📝 [Submit Feedback](https://docs.google.com/forms/d/1Yh3oM3i3a5mrUeMFo_Rwjh9GyNwqRr7B7FzORdAFob0/edit)**
+
+Your input helps us:
+- Identify bugs and issues
+- Prioritize new features
+- Improve user experience
+- Enhance platform security
+- Build a better product for the community
+
 ## 🌟 Star History
 
 If you find this project useful, please consider giving it a star ⭐
+
 
 ---
 
