@@ -10,19 +10,29 @@ Deployed on Vercel | [Give Feedback](https://docs.google.com/forms/d/1Yh3oM3i3a5
 
 ## 🎥 Video Demo
 
-<video width="100%" controls>
-  <source src="Stellar Freelance Platform - Google Chrome 2026-04-22 23-52-49.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+https://github.com/user-attachments/assets/your-video-id
+
+*Watch a complete walkthrough of the Stellar Freelance Platform features*
+
+> **To add your video**: 
+> 1. Upload your video file to a GitHub issue or comment
+> 2. Copy the generated URL
+> 3. Replace `your-video-id` above with the actual URL
+> 4. See [SCREENSHOTS_GUIDE.md](./SCREENSHOTS_GUIDE.md) for detailed instructions
 
 ## 🖼️ Screenshots
 
-![Dashboard Payment + Escrow](./dashboard-payment-escrow.png)
+### Landing Page
+![Landing Page](./assets/landing.png)
 
+### Dashboard
+![Dashboard](./assets/dashboard.png)
 ![Batch Payment + Invoice Generator](./batch-payment-invoice.png)
+*Send payments to multiple recipients and generate professional PDF invoices*
 
-![Home Connect Wallet](./home-connect-wallet.png)
+> **Note:** If images don't appear, make sure the PNG files are committed to the repository. Run `bash check-screenshots.sh` to verify all files are present.
 
+---
 ![Stellar](https://img.shields.io/badge/Stellar-Blockchain-blue)
 ![Next.js](https://img.shields.io/badge/Next.js-14-black)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue)
@@ -394,9 +404,22 @@ The platform supports multiple Stellar wallets:
 - [ ] Multi-signature escrow support
 - [ ] Recurring payment subscriptions
 - [ ] Fiat on/ramp integration
-- [ ] Mobile app (React Native)
-- [ ] Advanced analytics dashboard
-- [ ] Reputation system for freelancers
+- [ ] Dispute arbitration marketplace
+
+## 📚 Documentation
+
+Comprehensive guides and documentation:
+
+- **[ADD_SCREENSHOTS.md](./ADD_SCREENSHOTS.md)** - How to add screenshots to the README
+- **[SCREENSHOTS_GUIDE.md](./SCREENSHOTS_GUIDE.md)** - Complete guide for capturing and optimizing screenshots
+- **[TEST_WALLETS.md](./TEST_WALLETS.md)** - Test wallet management and usage guide
+- **[DEPLOYMENT_CHECKLIST.md](./DEPLOYMENT_CHECKLIST.md)** - Complete deployment checklist
+- **[.github/CICD.md](./.github/CICD.md)** - CI/CD pipeline documentation
+- **[.github/CICD_SETUP.md](./.github/CICD_SETUP.md)** - CI/CD setup guide
+- **[.github/DEVELOPER_GUIDE.md](./.github/DEVELOPER_GUIDE.md)** - Developer workflow guide
+- **[.github/QUICK_REFERENCE.md](./.github/QUICK_REFERENCE.md)** - Quick command reference
+
+## 🤝 Contributingystem for freelancers
 - [ ] Dispute arbitration marketplace
 
 ## 🤝 Contributing

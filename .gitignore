@@ -12,6 +12,7 @@ obj/
 
 # Env files
 .env
+.env.local
 
 # Logs
 *.log
