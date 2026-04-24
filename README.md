@@ -12,13 +12,6 @@ Deployed on Vercel | [Give Feedback](https://docs.google.com/forms/d/1Yh3oM3i3a5
 
 https://github.com/user-attachments/assets/your-video-id
 
-*Watch a complete walkthrough of the Stellar Freelance Platform features*
-
-> **To add your video**: 
-> 1. Upload your video file to a GitHub issue or comment
-> 2. Copy the generated URL
-> 3. Replace `your-video-id` above with the actual URL
-> 4. See [SCREENSHOTS_GUIDE.md](./SCREENSHOTS_GUIDE.md) for detailed instructions
 
 ## 🖼️ Screenshots
 
