@@ -26,8 +26,6 @@ https://github.com/user-attachments/assets/your-video-id
 ![Batch Payment + Invoice Generator](./batch-payment-invoice.png)
 *Send payments to multiple recipients and generate professional PDF invoices*
 
-> **Note:** If images don't appear, make sure the PNG files are committed to the repository. Run `bash check-screenshots.sh` to verify all files are present.
-
 ---
 ![Stellar](https://img.shields.io/badge/Stellar-Blockchain-blue)
 ![Next.js](https://img.shields.io/badge/Next.js-14-black)
@@ -49,11 +47,6 @@ Use these test wallet addresses to explore the platform on Stellar Testnet. All 
 | Roshan natha bhujbal | `GNOP345EXAMPLE5STELLAR5ADDRESS5TESTNET5WALLET5ADDR5` | [View](https://stellar.expert/explorer/testnet/account/GNOP345EXAMPLE5STELLAR5ADDRESS5TESTNET5WALLET5ADDR5) |
 | aditya sisodyia | `GQRS678EXAMPLE6STELLAR6ADDRESS6TESTNET6WALLET6ADDR6` | [View](https://stellar.expert/explorer/testnet/account/GQRS678EXAMPLE6STELLAR6ADDRESS6TESTNET6WALLET6ADDR6) |
 
-> **Note:** Replace these example addresses with your actual test wallet addresses. To create test wallets:
-> 1. Visit [Stellar Laboratory](https://laboratory.stellar.org/#account-creator?network=test)
-> 2. Generate a new keypair
-> 3. Fund the account with testnet XLM using the friendbot
-> 4. Update this table with your addresses
 
 ### 🎮 Try the Live Demo
 
@@ -88,7 +81,6 @@ The platform uses two Soroban smart contracts deployed on Stellar Testnet:
 | Payment Contract | Handles instant XLM and asset transfers | [View Contract](https://stellar.expert/explorer/testnet/contract/PAYMENT_CONTRACT_ID) |
 | Escrow Contract | Manages milestone-based escrow agreements | [View Contract](https://stellar.expert/explorer/testnet/contract/ESCROW_CONTRACT_ID) |
 
-> **Note**: Contract IDs will be updated after deployment. All contract interactions are transparent and verifiable on Stellar Explorer.
 
 ## ✨ Features
 
