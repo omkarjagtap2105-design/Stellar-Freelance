@@ -46,12 +46,12 @@ Use these test wallet addresses to explore the platform on Stellar Testnet. All 
 
 | Purpose | Address | View on Explorer |
 |---------|---------|------------------|
-| Test User 1 | `GABC123EXAMPLE1STELLAR1ADDRESS1TESTNET1WALLET1ADDR1` | [View](https://stellar.expert/explorer/testnet/account/GABC123EXAMPLE1STELLAR1ADDRESS1TESTNET1WALLET1ADDR1) |
-| Test User 2 | `GDEF456EXAMPLE2STELLAR2ADDRESS2TESTNET2WALLET2ADDR2` | [View](https://stellar.expert/explorer/testnet/account/GDEF456EXAMPLE2STELLAR2ADDRESS2TESTNET2WALLET2ADDR2) |
-| Test User 3 | `GHIJ789EXAMPLE3STELLAR3ADDRESS3TESTNET3WALLET3ADDR3` | [View](https://stellar.expert/explorer/testnet/account/GHIJ789EXAMPLE3STELLAR3ADDRESS3TESTNET3WALLET3ADDR3) |
-| Test User 4 | `GKLM012EXAMPLE4STELLAR4ADDRESS4TESTNET4WALLET4ADDR4` | [View](https://stellar.expert/explorer/testnet/account/GKLM012EXAMPLE4STELLAR4ADDRESS4TESTNET4WALLET4ADDR4) |
-| Test User 5 | `GNOP345EXAMPLE5STELLAR5ADDRESS5TESTNET5WALLET5ADDR5` | [View](https://stellar.expert/explorer/testnet/account/GNOP345EXAMPLE5STELLAR5ADDRESS5TESTNET5WALLET5ADDR5) |
-| Test User 6 | `GQRS678EXAMPLE6STELLAR6ADDRESS6TESTNET6WALLET6ADDR6` | [View](https://stellar.expert/explorer/testnet/account/GQRS678EXAMPLE6STELLAR6ADDRESS6TESTNET6WALLET6ADDR6) |
+| Santosh laxman jagtap | `GABC123EXAMPLE1STELLAR1ADDRESS1TESTNET1WALLET1ADDR1` | [View](https://stellar.expert/explorer/testnet/account/GABC123EXAMPLE1STELLAR1ADDRESS1TESTNET1WALLET1ADDR1) |
+|Mangal darode | `GDEF456EXAMPLE2STELLAR2ADDRESS2TESTNET2WALLET2ADDR2` | [View](https://stellar.expert/explorer/testnet/account/GDEF456EXAMPLE2STELLAR2ADDRESS2TESTNET2WALLET2ADDR2) |
+| Anuj Suresh Lanke  | `GHIJ789EXAMPLE3STELLAR3ADDRESS3TESTNET3WALLET3ADDR3` | [View](https://stellar.expert/explorer/testnet/account/GHIJ789EXAMPLE3STELLAR3ADDRESS3TESTNET3WALLET3ADDR3) |
+|omkar santosh jagtap | `GKLM012EXAMPLE4STELLAR4ADDRESS4TESTNET4WALLET4ADDR4` | [View](https://stellar.expert/explorer/testnet/account/GKLM012EXAMPLE4STELLAR4ADDRESS4TESTNET4WALLET4ADDR4) |
+| Roshan natha bhujbal | `GNOP345EXAMPLE5STELLAR5ADDRESS5TESTNET5WALLET5ADDR5` | [View](https://stellar.expert/explorer/testnet/account/GNOP345EXAMPLE5STELLAR5ADDRESS5TESTNET5WALLET5ADDR5) |
+| aditya sisodyia | `GQRS678EXAMPLE6STELLAR6ADDRESS6TESTNET6WALLET6ADDR6` | [View](https://stellar.expert/explorer/testnet/account/GQRS678EXAMPLE6STELLAR6ADDRESS6TESTNET6WALLET6ADDR6) |
 
 > **Note:** Replace these example addresses with your actual test wallet addresses. To create test wallets:
 > 1. Visit [Stellar Laboratory](https://laboratory.stellar.org/#account-creator?network=test)
