@@ -50,7 +50,7 @@ Use these test wallet addresses to explore the platform on Stellar Testnet. All 
 
 ### 🎮 Try the Live Demo
 
-1. **Visit the Demo**: Go to [stellarfreelance.vercel.app](http://stellarfreelance.vercel.app/)
+1. **Visit the Demo**: Go to [stellarfreelance.vercel.app](https://stellar-freelance-q3mulgcmt-omkarjagtap2105-designs-projects.vercel.app)
 2. **Connect Wallet**: 
    - Install [Freighter Wallet](https://www.freighter.app/) browser extension
    - Or use [Albedo Wallet](https://albedo.link/) (web-based)
