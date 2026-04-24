@@ -1,20 +1,16 @@
 'use client';
 
-/**
- * History page — paginated, filterable transaction history with CSV export.
- * Requirements: 7.1, 7.2, 7.3
- */
-
 import { useEffect, useState, useCallback } from 'react';
 import { useRouter } from 'next/navigation';
+import { motion } from 'framer-motion';
+import { Clock, RefreshCw } from 'lucide-react';
 import { useWallet } from '../../hooks/useWallet';
-import NavBar from '../../components/NavBar';
+import AppShell from '../../components/AppShell';
 import TxHistory from '../../components/TxHistory';
 import { fetchTransactionHistory } from '../../lib/stellar';
 import type { TxRecord } from '../../components/TxHistory';
 
 function mapToTxRecord(raw: any): TxRecord {
-  // Support both mock format (paymentId, sender, recipient, status) and Horizon format
   if (raw.paymentId !== undefined) {
     return {
       paymentId: raw.paymentId,
@@ -36,8 +32,7 @@ function mapToTxRecord(raw: any): TxRecord {
 }
 
 export default function HistoryPage() {
-  const { publicKey, connect, disconnect, isConnecting, error, balances, xlmUsdRate, isInitialized } =
-    useWallet();
+  const { publicKey, disconnect, balances, xlmUsdRate, isInitialized } = useWallet();
   const router = useRouter();
 
   const [records, setRecords] = useState<TxRecord[]>([]);
@@ -46,103 +41,81 @@ export default function HistoryPage() {
   const [nextCursor, setNextCursor] = useState<string | null>(null);
 
   useEffect(() => {
-    if (isInitialized && !publicKey) {
-      router.replace('/');
-    }
+    if (isInitialized && !publicKey) router.replace('/');
   }, [publicKey, router, isInitialized]);
 
-  const loadHistory = useCallback(
-    async (cursor?: string) => {
-      if (!publicKey) return;
-      setLoading(true);
-      setFetchError(null);
-      try {
-        const { records: raw, nextCursor: nc } = await fetchTransactionHistory(
-          publicKey,
-          cursor
-        );
-        const mapped = raw.map(mapToTxRecord);
-        setRecords((prev) => (cursor ? [...prev, ...mapped] : mapped));
-        setNextCursor(nc);
-      } catch (err) {
-        setFetchError(err instanceof Error ? err.message : 'Failed to load history');
-      } finally {
-        setLoading(false);
-      }
-    },
-    [publicKey]
-  );
+  const loadHistory = useCallback(async (cursor?: string) => {
+    if (!publicKey) return;
+    setLoading(true);
+    setFetchError(null);
+    try {
+      const { records: raw, nextCursor: nc } = await fetchTransactionHistory(publicKey, cursor);
+      const mapped = raw.map(mapToTxRecord);
+      setRecords(prev => cursor ? [...prev, ...mapped] : mapped);
+      setNextCursor(nc);
+    } catch (err) {
+      setFetchError(err instanceof Error ? err.message : 'Failed to load history');
+    } finally {
+      setLoading(false);
+    }
+  }, [publicKey]);
 
   useEffect(() => {
     if (publicKey) loadHistory();
   }, [publicKey, loadHistory]);
 
-  if (!isInitialized) {
-    return null;
-  }
-
-  if (!publicKey) return null;
+  if (!isInitialized || !publicKey) return null;
 
   return (
-    <div className="min-h-screen relative overflow-hidden">
-      {/* Animated Background */}
-      <div className="fixed inset-0 -z-10">
-        <div className="absolute top-20 left-10 w-96 h-96 bg-indigo-300 dark:bg-indigo-600 rounded-full mix-blend-multiply dark:mix-blend-soft-light filter blur-xl opacity-20 animate-blob"></div>
-        <div className="absolute bottom-20 right-10 w-96 h-96 bg-purple-300 dark:bg-purple-600 rounded-full mix-blend-multiply dark:mix-blend-soft-light filter blur-xl opacity-20 animate-blob animation-delay-2000"></div>
-      </div>
-
-      <NavBar
-        publicKey={publicKey}
-        balances={balances}
-        xlmUsdRate={xlmUsdRate}
-        onDisconnect={disconnect}
-      />
-
-      <main className="mx-auto max-w-5xl px-4 py-8">
-        <div className="flex items-center justify-between mb-6 animate-fade-in-up">
+    <AppShell publicKey={publicKey} balances={balances} xlmUsdRate={xlmUsdRate} onDisconnect={disconnect}>
+      <motion.div
+        initial={{ opacity: 0, y: 16 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.4 }}
+      >
+        {/* Page header */}
+        <div className="flex items-center justify-between mb-8">
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-indigo-500 to-purple-500 flex items-center justify-center">
-              <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
+            <div className="p-2.5 rounded-xl bg-amber-500/10 border border-amber-500/20">
+              <Clock size={20} className="text-amber-400" />
             </div>
-            <h1 className="text-xl font-semibold text-gray-900 dark:text-white">
-              Transaction History
-            </h1>
+            <div>
+              <h1 className="text-2xl font-bold">Transaction History</h1>
+              <p className="text-slate-400 text-sm">Your on-chain payment records</p>
+            </div>
           </div>
           <button
-            type="button"
             onClick={() => loadHistory()}
             disabled={loading}
-            className="px-4 py-2 rounded-lg bg-gradient-to-r from-indigo-600 to-purple-600 text-white text-sm font-medium hover:from-indigo-700 hover:to-purple-700 disabled:opacity-50 transition-all transform hover:scale-105 shadow-lg"
+            className="flex items-center gap-2 px-4 py-2 rounded-xl border border-white/10 hover:border-white/20 text-sm text-slate-400 hover:text-white transition-all disabled:opacity-50"
           >
-            {loading ? 'Loading…' : 'Refresh'}
+            <RefreshCw size={14} className={loading ? 'animate-spin' : ''} />
+            Refresh
           </button>
         </div>
 
         {fetchError && (
-          <div role="alert" className="mb-4 rounded-xl bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-700 px-4 py-3 text-sm text-red-700 dark:text-red-400 animate-fade-in-up">
+          <div role="alert" className="mb-4 p-4 rounded-xl border border-red-500/20 bg-red-500/5 text-sm text-red-400">
             {fetchError}
           </div>
         )}
 
-        <div className="animate-fade-in-up animation-delay-200">
+        <div className="rounded-2xl border border-white/5 bg-white/[0.02] overflow-hidden">
           <TxHistory records={records} />
         </div>
 
         {nextCursor && (
-          <div className="mt-4 flex justify-center animate-fade-in-up">
+          <div className="mt-4 flex justify-center">
             <button
-              type="button"
               onClick={() => loadHistory(nextCursor)}
               disabled={loading}
-              className="rounded-xl border-2 border-indigo-500 dark:border-indigo-400 px-6 py-3 text-sm font-medium text-indigo-600 dark:text-indigo-400 hover:bg-indigo-50 dark:hover:bg-indigo-900/20 disabled:opacity-50 transition-all transform hover:scale-105"
+              className="px-6 py-2.5 rounded-xl border border-white/10 hover:border-blue-500/30 text-sm text-slate-400 hover:text-white transition-all disabled:opacity-50"
             >
               {loading ? 'Loading…' : 'Load more'}
             </button>
           </div>
         )}
-      </main>
-    </div>
+      </motion.div>
+    </AppShell>
   );
 }

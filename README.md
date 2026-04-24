@@ -25,6 +25,9 @@ https://github.com/user-attachments/assets/your-video-id
 ### Landing Page
 ![Landing Page](./assets/landing.png)
 
+### Hero Page
+![Hero Page](./assets/hero.png)
+
 ### Dashboard
 ![Dashboard](./assets/dashboard.png)
 ![Batch Payment + Invoice Generator](./batch-payment-invoice.png)
