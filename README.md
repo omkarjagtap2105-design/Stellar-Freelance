@@ -6,7 +6,7 @@ A decentralized freelance payment platform built on the Stellar blockchain, feat
 
 **🔗 [View Live Demo](http://stellarfreelance.vercel.app/)**
 
-Deployed on Vercel | [Give Feedback](https://docs.google.com/forms/d/1Yh3oM3i3a5mrUeMFo_Rwjh9GyNwqRr7B7FzORdAFob0/edit)
+Deployed on Vercel | [Give Feedback](https://stellar-freelance-q3mulgcmt-omkarjagtap2105-designs-projects.vercel.app)
 
 ## 🎥 Video Demo
 
