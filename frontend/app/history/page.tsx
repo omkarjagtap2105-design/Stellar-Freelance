@@ -41,7 +41,7 @@ export default function HistoryPage() {
   const [nextCursor, setNextCursor] = useState<string | null>(null);
 
   useEffect(() => {
-    if (isInitialized && !publicKey) router.replace('/');
+    if (isInitialized && !publicKey) router.replace('/connect');
   }, [publicKey, router, isInitialized]);
 
   const loadHistory = useCallback(async (cursor?: string) => {

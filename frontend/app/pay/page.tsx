@@ -23,7 +23,7 @@ function PayPageContent() {
     : null;
 
   useEffect(() => {
-    if (isInitialized && !publicKey) router.replace('/');
+    if (isInitialized && !publicKey) router.replace('/connect');
   }, [publicKey, router, isInitialized]);
 
   if (!isInitialized || !publicKey || !signFn) return null;

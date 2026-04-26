@@ -151,7 +151,7 @@ export default function LandingPage() {
             className="flex flex-col sm:flex-row items-center justify-center gap-4"
           >
             <Link
-              href="/dashboard"
+              href="/connect"
               className="group flex items-center gap-2 px-6 py-3 rounded-xl bg-blue-500 hover:bg-blue-400 text-white font-semibold text-sm transition-all duration-200 hover:scale-[1.03]"
               style={{ boxShadow: '0 0 24px rgba(59,130,246,0.35)' }}
             >
@@ -250,7 +250,7 @@ export default function LandingPage() {
                   Connect your wallet and start accepting payments in seconds.
                 </p>
                 <Link
-                  href="/dashboard"
+                  href="/connect"
                   className="inline-flex items-center gap-2 px-8 py-4 rounded-xl bg-blue-500 hover:bg-blue-400 text-white font-semibold text-base transition-all duration-200 hover:scale-[1.03]"
                   style={{ boxShadow: '0 0 32px rgba(59,130,246,0.4)' }}
                 >
@@ -287,7 +287,7 @@ function NavBar() {
             How it works
           </a>
           <Link
-            href="/dashboard"
+            href="/connect"
             className="px-4 py-2 rounded-lg bg-blue-500/10 hover:bg-blue-500/20 text-blue-400 text-sm font-medium transition-colors border border-blue-500/20"
           >
             Launch App

@@ -13,7 +13,7 @@ export default function BatchPage() {
   const router = useRouter();
 
   useEffect(() => {
-    if (isInitialized && !publicKey) router.replace('/');
+    if (isInitialized && !publicKey) router.replace('/connect');
   }, [publicKey, router, isInitialized]);
 
   if (!isInitialized || !publicKey || !signFn) return null;
