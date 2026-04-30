@@ -38,15 +38,39 @@ https://github.com/user-attachments/assets/your-video-id
 
 Use these test wallet addresses to explore the platform on Stellar Testnet. All addresses are verifiable on [Stellar Expert](https://stellar.expert/explorer/testnet).
 
-| Purpose | Address | View on Explorer |
-|---------|---------|------------------|
-| Santosh laxman jagtap | `GABC123EXAMPLE1STELLAR1ADDRESS1TESTNET1WALLET1ADDR1` | [View](https://stellar.expert/explorer/testnet/account/GABC123EXAMPLE1STELLAR1ADDRESS1TESTNET1WALLET1ADDR1) |
-|Mangal darode | `GDEF456EXAMPLE2STELLAR2ADDRESS2TESTNET2WALLET2ADDR2` | [View](https://stellar.expert/explorer/testnet/account/GDEF456EXAMPLE2STELLAR2ADDRESS2TESTNET2WALLET2ADDR2) |
-| Anuj Suresh Lanke  | `GHIJ789EXAMPLE3STELLAR3ADDRESS3TESTNET3WALLET3ADDR3` | [View](https://stellar.expert/explorer/testnet/account/GHIJ789EXAMPLE3STELLAR3ADDRESS3TESTNET3WALLET3ADDR3) |
-|omkar santosh jagtap | `GKLM012EXAMPLE4STELLAR4ADDRESS4TESTNET4WALLET4ADDR4` | [View](https://stellar.expert/explorer/testnet/account/GKLM012EXAMPLE4STELLAR4ADDRESS4TESTNET4WALLET4ADDR4) |
-| Roshan natha bhujbal | `GNOP345EXAMPLE5STELLAR5ADDRESS5TESTNET5WALLET5ADDR5` | [View](https://stellar.expert/explorer/testnet/account/GNOP345EXAMPLE5STELLAR5ADDRESS5TESTNET5WALLET5ADDR5) |
-| aditya sisodyia | `GQRS678EXAMPLE6STELLAR6ADDRESS6TESTNET6WALLET6ADDR6` | [View](https://stellar.expert/explorer/testnet/account/GQRS678EXAMPLE6STELLAR6ADDRESS6TESTNET6WALLET6ADDR6) |
-
+User Name	User Wallet Address	User Email	User Feedback	Commit ID
+Aiman Momin	GAIXT2BHVEVSXQN7ERT4SBZFKJ35FKJR2LUADLFVHJI7MI7D6WJ42NDE	aimanmomin999@gmail.com	A tiny free quota or credits could make adoption easier	f8f91bb
+KARTIK BOTRE	GBHA2H7RRFAE5QINGF3BLSZGLPEBTM5EW7A547PJ4E26L4Z7MMLAOJEE	kartikbotre2410@gmail.com	Image generator Feature is absolutely accurate	f8f91bb
+Spandan Tulse	GDNK4HM6E2EUC7SSXQ3C5JVQYWAB5IZ4GNMHJ5XRBKD4DZKBJN34D3V5	spandy205@gmail.com	Summariser Feature is very useful	f8f91bb
+neel pote	GBKLRBXJFBC7SFNZ6PWM5WRHKEOD3PONHYE4UY2N6NJEF3BNS2KU65SV	neelpote44@gmail.com	option to genrate multiple images at once	f8f91bb
+Sarthak Dhere	GCRYPAQB3TFLQE727TA3R723QIEPTP5KCMP7OMH4HVXNLCEUKPD4AZJP	sarthakdhere0217@gmail.com	no there where no bugs	f8f91bb
+Viru Shelke	GD5II5CFYRMH6ZNL33K3BT74T4WMXRG6EMGPUIEUAXRKUKVQ3A5ZTAPB	indravardhan10@gmail.com	Could improve the landing page insights	f8f91bb
+Chirag Pardeshi	GCCIMBD7AHY2WFUV7GXJ37DAVYO2FXK2OIDARUVS4RQRIOUY2ZTQTBKG	chiragpardeshi493@gmail.com	nice ui preferred	ebcc575
+Dhruva Mandavkar	GA5LFJFRZ6356U2UB37NQGOCZJVLF42FZETM3OMPTP2EZ2QQUFCICQBF	dhruvamandavkar10@gmail.com	A resume analysis checker that checks and rates your resume.	ebcc575
+Shubham Bhosale	GAOJPUXIQQBK4SVA4RYQ2MUKHAUUHHJDFQFHYAYY6M4LO7ULDJO7PXXR	shubhambhosale9833@gmail.com	Could add more documents formats for ai analysis	ebcc575
+Omkar Jagtap	GALPMWKLCNINAXN6L6Z5MOS2Y2Z4BFTP3MQDUX4A22VAL3WBV3BLQVX3	omkarjagtap2105@gmail.com	add a more informative ui	ebcc575
+Sarthak Kshirsagar	GCCGWE7UVX6W746FFYD55THU2KM4XOT2EJGFRZK4K5KISZDUAIN7VDZG	kshirsagarsarthak9@gmail.com	PDF tool helps summarize better than anyother tools online	7f85400
+Aniket Bhilare	GABAKQPPTWRW6QDR7WSNVXO3QA67B3O5EG6P75SOPQK7GATBFRRR3GFS	bhilareaniket2424@gmail.com	A single wallet signing feature where multiple tools can be used for a limited time or amount.	7f85400
+Thanchan Bhumij	GCZYQCKPUBOHOL5VONWJOLHNULLTBE5YR7KRH2OK6LZAO4EL6S2QZXYZ	thanchanb@gmail.com	add better navigation	7f85400
+Shantanu Udhane	GBLAKFNA2MGGK2F6SCPTEWL3HSI7G4CK4BL6XOFTNPHALXMPECLQKP2F	udhaneshantanu@gmail.com	a security page should be added telling users about how secure the dapp is.	7f85400
+yash annadate	GCFPZLS4FSNHSD5HKVMES2Y26XCLTD3BO2G6EY2NQT4JHGYW6GWTQSJX	yashannadate2005@gmail.com	options to choose from multiple models for various tools	7f85400
+Kapil Shisodiya	GA367DTGT5S5UZSFN4M24SWL2OOXYFX5PDFNFRN5ORC4UIAKG3VHBPU5	kapilshisodiya1308@gmail.com	need a better about section	7f85400
+Purvai Naik	GB5OKLSWWQIMG4BQCA7QKMOTAVYTZ5KUV7B62LROPEYRPYGUGWRCRKG4	purvai1246@gmail.com	needs a how to use	7f85400
+Khushi Shinde	GDUVJHIQJ2MPCUGI2XLDSON6PS5Q4CW2ADOP2BXVZYWS3LHXAAH2LLC7	shindekhushi892003@gmail.com	add more features	7f85400
+Atharva bamble	GCYFYUN6Y7PWXVTBMFGBAGZ6MKD2LIOHKRQUGZLXULYTDJVJZFCES72B	atharvabamble@gmail.com	tracking your limits should be added	5f757f6
+Akansha patil	GCU3MRFMKVSV6I6UVEICCS4TON3WA2YNO7URCENEMI7BBE4GLSNYORIX	akankshapatil2099@gmail.com	Add a logo for recognition	5f757f6
+NEEV AGRAWAL	GD3M2PRHPNWTEV6INIYKDNTE3MWQJ3RWCA6JVG433EQ3ID6MDPYPN7W2	neevagrawal328@gmail.com	Add a light and dark theme	5f757f6
+Tejashwi Kasture	GDQRLHQH7OZJI3OJ5HUL7DWGOTFRW734QC3EYJOMET5MVBLTQI4VGRXT	kasturetejaswhi@gmail.com	add more document formats for tools like pdf analyzer	5f757f6
+Atharva Shinde	GAC2SOG32Y62BBQCFUTDJSVFJRVMKATMYKPLSBUJFYPN27KYQ5U6IKCT	satharvashinde7551@gmail.com	give some free tokens to users	5f757f6
+Atharva Koyte	GCPN4OERNLJEXQXNZJ3SMA6PA7EVK5EPQ3IEX22CXX4BXS2FVNOVJ34L	atharva.koyte@mitwpu.edu.in	Needs a good ui	cabc079
+Akshay Awasthy	GARBOAAO2N7WD47ILMIEDJGVQQZDY2TUNUDIGBQHGPPNPEA7GX7MYUGP	akshayawasthy83@gmail.com	needs better logic for escrow handling	cabc079
+Sneha Pathak	GDCUYJNELLBR7AN7OB4D56VDCBLBPQIKYUBECQOYMSD3VONNE7NRMITH	sneha.pathak@gmail.com	more auth login	cabc079
+Meera Joshi	GBRGGGVT2IBQUW7CQMTTZWVBGQT7YJM5KLKGQWXJ7OCGY7NZXLIKLUDX	meera.joshi.pune@gmail.com	extra tools	4504988
+Samar Kudale	GD7GH6UJRV373QNY2YXGURQS7U5KL44MSIENJVKXHIJDKLTTUGUIP6BL	samarkudale3@gmail.com	frontend needs better ui	4504988
+Ronit Wadkar	GCXGTYYJKJOO6ARFWSIFWWLRP2OOH77Y3JLPF3RI7WZ7IHPXBNMHS6JM	ronitwadkar68@gmail.com	summarizing bullet points tool	e6b8267
+Rajesh Das	GC22MRKOZK4V7MWH2ARTGNSIFSUSB2GOAZVZ3HZGW3U2ACS5GJVIDL3Y	rajeshdas81@gmail.com	An about section	98f97f5
+Dhruv Patnekar	GAITQAFXKSZSZCZMTRZUQC4I7IQWBRWH4QZ5E7ER3IGFJKO6MNFYIIQ5	dhruv.patnekar@gmail.com	Add a about section page	584960e
+Aditya Shisodiya	GAOYOWIZPQTSN7RXRU27DLO6NOA445CBK55FNB7Z6PQIULJZ2YFETKEW	adityasisodiya56412@gmail.com	And a about section page	59ea4fe
 
 ### 🎮 Try the Live Demo
 
